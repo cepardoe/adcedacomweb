@@ -1,6 +1,6 @@
 <?php
  
-if(isset($_POST['submit'])) {
+if(isset($_POST['send'])) {
     
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
@@ -8,5 +8,7 @@ if(isset($_POST['submit'])) {
     $msg = $nombre . "" . $apellido;
 
     mail($mail, "Prueba mail", $msg);
+
+    echo 'hola';
 }
 ?>  
