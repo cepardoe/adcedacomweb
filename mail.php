@@ -35,8 +35,8 @@
 
         mail('mercadeoyventas@adceda.com.co', "Solicitud Página Web", $tabla, $mail);
     }
-    if(isset($_POST['sendContacto'])) { 
-        $mailsus = $_POST['sendSuscripcion'];
+    if(isset($_POST['sendSuscripcion'])) { 
+        $mailsus = $_POST['suscripcion'];
 
         mail('mercadeoyventas@adceda.com.co', "Solicitud Suscripción", $mailsus);
     }
