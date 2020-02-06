@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 	"use strict";
 
 	$(".loader").delay(1000).fadeOut("slow");
-  $("#overlayer").delay(1000).fadeOut("slow");	
+ 	$("#overlayer").delay(1000).fadeOut("slow");	
 
 	var siteMenuClone = function() {
 
@@ -122,8 +122,6 @@ jQuery(document).ready(function($) {
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 	};
 	// siteSliderRange();
-
-
 	
 
 	var siteCarousel = function () {
@@ -290,6 +288,23 @@ jQuery(document).ready(function($) {
                 slidesToShow: 3
             }
         }]
-    });
+	});
+	
+	$('.owl-carousel-clientes').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:5
+			}
+		}
+	})
 
 });
