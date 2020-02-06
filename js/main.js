@@ -90,6 +90,23 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
+	$('.owl-carousel-clientes').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:4
+			},
+			1000:{
+				items:6
+			}
+		}
+	})
+
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
@@ -289,22 +306,6 @@ jQuery(document).ready(function($) {
             }
         }]
 	});
-	
-	$('.owl-carousel-clientes').owlCarousel({
-		loop:true,
-		margin:10,
-		nav:true,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:3
-			},
-			1000:{
-				items:5
-			}
-		}
-	})
+
 
 });
