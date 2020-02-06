@@ -92,17 +92,18 @@ jQuery(document).ready(function($) {
 
 	$('.owl-carousel-clientes').owlCarousel({
 		loop:true,
+		autoplay:false,
 		margin:10,
-		nav:true,
+		nav:false,
 		responsive:{
 			0:{
 				items:1
 			},
 			600:{
-				items:5
+				items:4
 			},
 			1000:{
-				items:10
+				items:5
 			}
 		}
 	})
