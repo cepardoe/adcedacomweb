@@ -1,6 +1,6 @@
 <?php
  
-    if(isset($_POST['send'])) {
+    if(isset($_POST['sendContacto'])) {
         
         $nombre = $_POST['nombre'];
         $apellido = $_POST['apellido'];
@@ -34,5 +34,10 @@
                    </table>'; 
 
         mail('mercadeoyventas@adceda.com.co', "Solicitud Página Web", $tabla, $mail);
+    }
+    if(isset($_POST['sendContacto'])) { 
+        $mailsus = $_POST['sendSuscripcion'];
+
+        mail('mercadeoyventas@adceda.com.co', "Solicitud Suscripción", $mailsus);
     }
 ?>  
