@@ -99,10 +99,10 @@ jQuery(document).ready(function($) {
 				items:1
 			},
 			600:{
-				items:4
+				items:5
 			},
 			1000:{
-				items:6
+				items:10
 			}
 		}
 	})

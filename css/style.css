@@ -1262,3 +1262,11 @@ h1, h2, h3, h4, h5,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+  /* front David */
+
+  .owl-carousel-clientes .owl-nav,
+  .owl-carousel-clientes .owl-dots {
+    display: none;
+  }
+  
