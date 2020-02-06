@@ -109,6 +109,17 @@ jQuery(document).ready(function($) {
 		}
 	})
 
+	$('#sendC').click(function(e){
+		e.preventDefault();
+		$.ajax({
+			url:   'mail.php', //archivo que recibe la peticion
+			type:  'post', //método de envio
+			data: $("#mailContacto").serialize(),
+			success:  function (data) { //una vez que el archivo recibe el request lo procesa y lo devuelve
+				alert(data);
+			}
+		});	
+	});
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
