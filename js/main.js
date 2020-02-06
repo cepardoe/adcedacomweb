@@ -92,9 +92,10 @@ jQuery(document).ready(function($) {
 
 	$('.owl-carousel-clientes').owlCarousel({
 		loop:true,
-		autoplay:false,
-		margin:10,
+		autoplay:true,
+		margin:80,
 		nav:false,
+		autoplayTimeout:1200,
 		responsive:{
 			0:{
 				items:1
