@@ -7,7 +7,7 @@
         $mail = $_POST['mail'];
         $msg = $nombre . "" . $apellido;
 
-        mail($mail, "Prueba mail", $msg);
+        mail('mercadeoyventas@adceda.com.co', "Solicitud Página Web", $msg, $mail);
 
         echo 'Enviado';
     }
