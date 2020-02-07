@@ -9,7 +9,8 @@
         $empleados = $_POST['cantidadEmpleados'];
         $producto = $_POST['productoRequerido'];
         $msg = $_POST['mensaje'];
-        $tabla += '<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        $tabla = $nombre .' '. $apellido .' '. $mail .' '. $tel .' '. $empleados .' '. $producto .' '. $msg;   
+        /*'<table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                         <td>
                             <h2>Adceda</h2>
@@ -31,7 +32,7 @@
                             $msg
                         </td>  
                     </tr>
-                   </table>'; 
+                   </table>'; */
 
         mail('mercadeoyventas@adceda.com.co', "Solicitud Página Web", $tabla, $mail);
     }

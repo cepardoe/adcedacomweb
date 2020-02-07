@@ -109,7 +109,7 @@ jQuery(document).ready(function($) {
 		}
 	})
 
-	$('#sendC').click(function(e){
+	/*$('#sendC').click(function(e){
 		e.preventDefault();
 		$.ajax({
 			url:   'mail.php', //archivo que recibe la peticion
@@ -119,7 +119,7 @@ jQuery(document).ready(function($) {
 				alert(data);
 			}
 		});	
-	});
+	});*/
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
@@ -262,7 +262,7 @@ jQuery(document).ready(function($) {
 
   		var st = $(this).scrollTop();
 
-  		if (st > 100) {
+  		if (st >= 99) {
   			$('.js-sticky-header').addClass('shrink');
   		} else {
   			$('.js-sticky-header').removeClass('shrink');
@@ -299,7 +299,7 @@ jQuery(document).ready(function($) {
 	}
 	counter();
 
-    $('.customer-logos').slick({
+    /*$('.customer-logos').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
@@ -318,7 +318,7 @@ jQuery(document).ready(function($) {
                 slidesToShow: 3
             }
         }]
-	});
+	});*/
 
 
 });

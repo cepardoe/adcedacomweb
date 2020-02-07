@@ -1274,4 +1274,6 @@ h1, h2, h3, h4, h5,
     font-size: 20px;
     letter-spacing: .5px;
   }
-  
+  .page-single img {
+    border-radius: 5px;  
+  }
