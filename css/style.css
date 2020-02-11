@@ -1265,8 +1265,8 @@ h1, h2, h3, h4, h5,
 
   /* front David */
 
-  .owl-carousel-clientes .owl-nav,
-  .owl-carousel-clientes .owl-dots {
+  .owl-carousel-clientes .owl-dots,
+  .owl-carousel-cronoseg .owl-dots {
     display: none;
   }
   
@@ -1282,4 +1282,8 @@ h1, h2, h3, h4, h5,
   }
   div.eapps-widget {
     position: static !important;
+  }
+  .owl-carousel-cronoseg .owl-stage {
+    display: flex;
+    align-items: center;
   }

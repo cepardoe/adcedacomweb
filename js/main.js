@@ -108,6 +108,24 @@ jQuery(document).ready(function($) {
 			}
 		}
 	})
+	$('.owl-carousel-cronoseg').owlCarousel({
+		loop:true,
+		autoplay:true,
+		margin:70,
+		nav:false,
+		autoplayTimeout:1000,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:4
+			},
+			1000:{
+				items:6
+			}
+		}
+	})
 
 	$('#button-addon2').click(function(){
 		$.ajax({
