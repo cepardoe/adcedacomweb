@@ -127,20 +127,49 @@ jQuery(document).ready(function ($) {
 		}
 	})
 
-	$('#button-addon2').on('sumbit', function (e) {
+	$('#mailContacto').submit(function (e) {
 		e.preventDefault();
+		let alerta = document.getElementById('alertaC');
+		function closeTime() {
+			return setTimeout(function () { alerta.style.display = 'none'; }, 4000);
+		}
+		function cleanInputs() {
+			return document.getElementById('mailContacto').reset();
+		}
 		$.ajax({
-			/* headers: {
-				'Content-Type': 'application/x-www-form-urlencoded'
-			}, */
 			type: 'post',
-			url: 'mail.php',
-			data: $('#form2').serialize(),
-			success: function (data) {
-				alert(data);
+			url: $(this).attr('action'),
+			data: $(this).serialize(),
+			success: function () {
+				alerta.style.display = 'block';
+				closeTime();
+				cleanInputs();
+			}
+		});
+	}); 
+
+
+	$('#form2').submit(function (e) {
+		e.preventDefault();
+		let alerta = document.getElementById('alertaSus');
+		function closeTime() {
+			return setTimeout(function () { alerta.style.display = 'none'; }, 4000);
+		}
+		function cleanInput() {
+			return document.getElementById('suscripcion').value = '';
+		}
+		$.ajax({
+			type: 'post',
+			url: $(this).attr('action'),
+			data: $(this).serialize(),
+			success: function () {
+				alerta.style.display = 'block';
+				closeTime();
+				cleanInput();
 			}
 		});
 	});
+
 
 	var sitePlusMinus = function () {
 		$('.js-btn-minus').on('click', function (e) {
