@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
 		autoplay:true,
 		margin:80,
 		nav:false,
-		autoplayTimeout:1200,
+		autoplayTimeout:1000,
 		responsive:{
 			0:{
 				items:1
@@ -109,17 +109,19 @@ jQuery(document).ready(function($) {
 		}
 	})
 
-	/*$('#sendC').click(function(e){
-		e.preventDefault();
+	$('#button-addon2').click(function(){
 		$.ajax({
-			url:   'mail.php', //archivo que recibe la peticion
-			type:  'post', //método de envio
-			data: $("#mailContacto").serialize(),
-			success:  function (data) { //una vez que el archivo recibe el request lo procesa y lo devuelve
+			headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    	},
+			url:   'http://adceda.com/mail.php',
+			type:  'POST', 
+			data: $("#form2").serialize(),
+			success:  function (data) {
 				alert(data);
 			}
 		});	
-	});*/
+	});
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
