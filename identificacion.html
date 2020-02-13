@@ -288,33 +288,36 @@
         <div class="row">
           <div class="col-md-5">
             <h2 class="footer-heading mb-4">Nosotros</h2>
-            <p>Somos una empresa de servicio tecnólogico para entidades a nivel mundial, integrado por personal
-              altamente calificado, certificado, innovar y persistente en la fabricación de herramientas que realmente
-              funcionan.</p>
+            <p>Somos una empresa de servicio tecnólogico para entidades a nivel mundial, integrado por personal altamente
+              calificado, certificado, innovar y persistente en la fabricación de herramientas que realmente funcionan.
+            </p>
           </div>
           <div class="col-md-5 ml-auto">
             <div class="mb-5">
               <h2 class="footer-heading mb-4">Subscribirse a Noticias</h2>
-              <form action="mail.php" method="post" class="footer-suscribe-form">
+  
+              <form class="footer-suscribe-form" id="form2" action="mail.php" method="POST">
                 <div class="input-group mb-3">
-                  <input type="email" name="suscripcion" class="form-control" placeholder="Su correo electrónico"
-                    required>
+                  <input type="hidden" name="mailSus">
+                  <input type="email" name="suscripcion" class="form-control" placeholder="Su correo electrónico" required
+                    id="suscripcion">
                   <div class="input-group-append">
-                    <button class="btn btn-primary text-white" type="submit" id="button-addon2"
-                      name="sendSuscripcion">Suscribirse</button>
+                    <button class="btn btn-primary text-white" type="submit" id="button-addon2">Suscribirse</button>
                   </div>
                 </div>
-
-
-
-                <h2 class="footer-heading mb-4">Síguenos</h2>
-                <a href="https://www.facebook.com/AdcedaSystemsSas/" target="_blank"
-                  class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <!--<a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-youtube"></span></a>-->
-                <a href="https://www.linkedin.com/company/adceda-systems-sas" target="_blank" class="pl-3 pr-3"><span
-                    class="icon-linkedin"></span></a>
               </form>
+              <div class="alert alert-success" role="alert" id="alertaSus" style="display: none;">
+                Mensaje enviado. Pronto nos comunicaremos contigo
+              </div>
+  
+              <h2 class="footer-heading mb-4">Síguenos</h2>
+              <a href="https://www.facebook.com/AdcedaSystemsSas/" target="_blank" class="smoothscroll pl-0 pr-3"><span
+                  class="icon-facebook"></span></a>
+              <!--<a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-youtube"></span></a>-->
+              <a href="https://www.linkedin.com/company/adceda-systems-sas" target="_blank" class="pl-3 pr-3"><span
+                  class="icon-linkedin"></span></a>
+  
             </div>
           </div>
         </div>
@@ -333,7 +336,7 @@
         </div>
       </div>
     </footer>
-
+    
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
